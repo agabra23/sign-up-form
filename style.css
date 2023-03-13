@@ -15,8 +15,8 @@ html {
 :root {
     font-size: 20px;
     font-family: 'Source Sans Pro', sans-serif;
-    --primary-dark: #333;
-    --primary-light: #efefef;
+    --primary-dark: rgb(51, 51, 54);
+    --primary-light: rgb(239, 239, 243);
 }
 
 html, body, div, span, applet, object, iframe,
@@ -69,6 +69,7 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: var(--primary-dark);
 }
 
 .fa {
@@ -77,30 +78,26 @@ body {
 
 main {
     height: 100%;
-    display: flex;
-    flex: 1;
-    padding-right: 3vw;
     gap: calc(30px + 1rem);
-    background-image: url(./sign-up-background.jpg);
-    background-size: cover;
 }
 
 .form-description-wrapper {
-    background-color: rgba(155, 155, 155, 0.15);
-    border-radius: 15px;
+    /* background-color: rgba(155, 155, 155, 0.15);
+    border-radius: 15px; */
     padding: 30px;
     
 }
 
 .form-description {
     text-align: center;
-    font-size: 2.5vw;
-    color: var(--primary-dark);
+    font-size: 1.5rem;
+    color: var(--primary-light);
 }
 
 .right-wrapper {
     flex: 1;
     display: flex;
+    min-height: 100vh;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
@@ -120,7 +117,7 @@ form {
     min-height: 50vh;
     width: 100%;
     border: 1px solid var(--primary-dark);
-    background-color: #e4e4e49a;
+    background-color: var(--primary-light);
     
     border-radius: 20px;
     display: flex;
@@ -138,7 +135,6 @@ fieldset {
 }
 
 .form-group {
-    flex-shrink: 1;
     display: flex;
     min-width: 100%;
     justify-content: space-evenly;
@@ -210,14 +206,14 @@ button {
     padding: .5rem;
     border-radius: 10px;
     border: 1px solid var(--primary-dark);
-    background-color: #3333331e;
+    /* background-color: #3333331e; */
 }
 
 button:hover {
-    /* background-color: #33333366; */
+    background-color: rgb(51, 51, 51, .1);
     cursor: pointer;
-    transform: scale(1.1);
-    transition: .1s ease-in-out;
+    transform: scale(1.07);
+    transition: .08s ease-in-out;
 }
 
 input:placeholder-shown,
