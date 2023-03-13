@@ -77,7 +77,7 @@ body {
 }
 
 main {
-    height: 100%;
+    min-height: 100%;
     gap: calc(30px + 1rem);
 }
 
@@ -90,18 +90,20 @@ main {
 
 .form-description {
     text-align: center;
+    margin: auto;
     font-size: 1.5rem;
+    max-width: 75%;
     color: var(--primary-light);
 }
 
 .right-wrapper {
-    flex: 1;
     display: flex;
-    min-height: 100vh;
+    min-height: 100%;
+    min-width: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    gap: 8vh;
+    gap: 3rem;
 }
 
 input::placeholder {
@@ -110,12 +112,12 @@ input::placeholder {
 }
 
 .form-wrapper {
-    width: 50vw;
+    min-width: 40%;
 }
 
 form {
-    min-height: 50vh;
-    width: 100%;
+    min-height: 80%;
+    min-width: 100%;
     border: 1px solid var(--primary-dark);
     background-color: var(--primary-light);
     
@@ -132,12 +134,14 @@ fieldset {
     justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
+    gap: 1rem;
 }
 
 .form-group {
     display: flex;
     min-width: 100%;
     justify-content: space-evenly;
+    align-items: start;
     gap: max(2vw, 2px);
 }
 
@@ -165,7 +169,6 @@ input {
     padding: .5rem;
     flex: 1;
     align-self: stretch;
-    flex-shrink: 1;
     appearance: none;
     border: 1px solid var(--primary-dark);
     border-radius: 5px;
@@ -224,4 +227,23 @@ input:empty {
 
 input:valid {
     border-color: green;
+}
+
+p {
+    text-align: center;
+    font-size: .6rem;
+    color: var(--primary-dark);
+}
+
+a {
+    text-decoration: none;
+}
+
+.submit-section {
+    gap: 1rem;
+}
+
+.error {
+    color: red;
+    font-size: .5rem;
 }
